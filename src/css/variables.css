@@ -1,0 +1,22 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Background: hsl(225, 100%, 94%);
+    --Link: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --Card: hsl(225, 100%, 98%);
+    --Contrast: hsl(224, 23%, 55%);
+    --HeavyFont: hsl(223, 47%, 23%);
+
+    /* ## Typography */
+
+    /* ### Font */
+
+    --Family: "Red Hat Display";
+    --Weights: 500, 700, 900;
+
+}

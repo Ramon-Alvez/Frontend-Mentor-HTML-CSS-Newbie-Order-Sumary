@@ -1,0 +1,150 @@
+body{
+    background-color: var(--Background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+body .bgImage{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.card{
+    background-color: var(--Card);
+    max-width: 450px;
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: var(--Family, sans-serif);
+    font-size: 16px;
+
+    margin: 20px;
+}
+
+.card .image img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.content{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: var(--Contrast);
+}
+
+.content .title{
+    color: var(--HeavyFont);
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.description{
+    padding: 0 10px;
+}
+
+.plan{
+    background-color: hsl(224, 23%, 55%, 0.05);
+    display: flex;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.plan .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; 
+}
+
+.plan .value{
+    text-align: left;
+}
+
+.plan .value 
+    .anualPlan{
+        font-size: 16px;
+        color: var(--HeavyFont);
+        font-weight: 800;
+}
+
+.plan::before{
+    content: '';
+    display: inline-block;
+    background: url(../images/icon-music.svg) no-repeat;
+    width: 68px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.container a{
+    color: var(--Link);
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+.button{
+    background-color: var(--Link);
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 1px 12px 20px hsla(245, 75%, 52%, 0.25);
+    cursor: pointer;
+
+    margin-top: 10px;
+    
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cancel{
+    color: var(--Contrast);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+
+.footer{
+    margin: 20px;
+}
+
+.footer
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+
+/* Effects */
+
+.container a:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+}
+
+.button:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+}
+
+.cancel:hover{
+    color: #000;
+    transition: 0.3s ease-in-out;
+    font-weight: 900;
+}

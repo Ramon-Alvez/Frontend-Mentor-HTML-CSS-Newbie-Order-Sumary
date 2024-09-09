@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Order summary card</title>
 
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/styles.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    
 </head>
+
 <body>
+  <picture>
+    <source class="bgImage"
+     media="(min-width: 800px)" srcset="src/images/pattern-background-desktop.svg">
 
-  Order Summary
+    <img class="bgImage"
+     src="src/images/pattern-background-mobile.svg" alt="">
+  </picture>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  <main class="card">
+    <header class="image">
+      <img src="src/images/illustration-hero.svg" alt="Illustration hero">
+    </header>
 
-  Annual Plan
-  $59.99/year
+    <section class="content">
+      <h1 class="title">Order Summary</h1>
 
-  Change
+      <p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <section class="plan">
+        <div class="container">
+          <div class="value">
+            <h2 class="anualPlan">Annual Plan</h2>
+            <p class="price">$59.99/year</p>
+          </div>
+          
+          <a href="#">Change</a>
+        </div>
+      </section>
+
+      <input class="button"
+       type="button" value="Proceed to Payment">
+
+      <a class="cancel" 
+      href="#">Cancel Order</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
+
 </html>
