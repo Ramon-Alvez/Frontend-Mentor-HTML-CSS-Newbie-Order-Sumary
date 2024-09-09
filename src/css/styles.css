@@ -133,7 +133,7 @@ body .bgImage{
 /* Effects */
 
 .container a:hover{
-    opacity: 0.5;
+    opacity: 0.7;
     transition: 0.3s ease-out;
     text-decoration: none;
 }
